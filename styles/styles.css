@@ -10,40 +10,219 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
+/*grijs #899CA0 en donkergroen #1C2B32*/
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #1C2B32;
 
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #899CA0;
+
+}
 
 /*////////////////////////
-    2. Typography
+    2. Typography body/ link/ input button
 ////////////////////////*/
 
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+button,
+input {
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    padding: 20px;
+    border: solid #1C2B32;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #1C2B32;
+    color: white;
+
+}
+
+input {
+    padding: 20px 100px 20px 50px;
+    margin-right: -5px;
+    text-align: center;
+    border: 2px solid;
+    border-color: #1C2B32;
+    border-radius: 30px 0px 0px 30px;
+    background-color: transparent;
+
+}
+
+input::placeholder {
+    color: #1C2B32;
+}
 
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
+Main {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
 
+}
 
 /*///////////// 3.1 Header /////////////*/
 
+header {
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
 
+}
+
+.domein {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    padding-bottom: 320px;
+}
+
+h1 {
+    color: #1C2B32;
+    font-size: 100px;
+    font-weight: 700;
+
+}
+
+.para-domein {
+    padding-bottom: 40px;
+    font-size: small;
+
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.resensie-john,
+.resensie-jane {
+    width: 100%;
+    box-shadow: 0px 5px 20px #899CA0;
+    border-radius: 10px;
+    text-align: left;
+    margin: 50px;
+    padding: 50px 100px 50px 120px;
+    font-size: small;
+    position: relative;
 
+}
+
+.quote-foto,
+.quote-foto{
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    width: 35px;
+
+}
+
+.foto-jane,
+.foto-john{
+    width: 50px;
+
+}
+
+.div-jane,
+.div-john {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: -20px;
+
+
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.support {
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
 
+}
+
+.support > h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.support > p {
+    font-size: small;
+}
+
+.image-support {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.button-contact {
+    border-radius: 30px;
+    margin-top: 25px;
+
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq h2 {
+    margin-bottom: 50px;
+}
 
+.faq details {
+    text-align: left;
+    font-size: small;
+    margin: 30px 0px 0px 50px;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+.faq p {
+    color: white;
+    background-color: #899CA0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: left;
+    width: 70%;
+
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    text-align: center;
+    font-size: small;
+    background-color: #1C2B32;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+footer p {
+    color: white;
+}
